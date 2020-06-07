@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>カウントダウンタイマー（JS版）</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>カウントダウンタイマー（JS版）</h1>
+        <p>このプログラムはJavaScriptのみを利用して作成されています。<br>
+            登録されたタスクはブラウザをリフレッシュすると消えてしまいますのでご注意ください。</p>
+    </header>
+    <div id="wrapper">
+        <main>
+            <form id="input-form">
+                <div class="input-text">
+                    <!-- 秒数入力 -->
+                    <h2>秒数</h2>
+                    <!-- 時 -->
+                    <input id="h-input" type="number" value="0" min="0" max="99" />
+                    <label for="h-input">時</label>
+                    <!-- 分 -->
+                    <input id="m-input" type="number" value="0" min="0" max="59" />
+                    <label for="m-input">分</label>
+                    <!-- 秒 -->
+                    <input id="s-input" type="number" value="0" min="0" max="59" />
+                    <label for="s-input">秒</label>
+                </div>
+                <div class="output-text">
+                    <!-- 残秒数表示 -->
+                    <h2>残り</h2>
+                    <span id="count-down">0 秒</span>
+                </div>
+                <div class="submit">
+                    <!-- 開始終了ボタン-->
+                    <button id="start-button" type="button">START</button>
+                    <button id="stop-button" type="button">STOP</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <script src="js/timer.js"></script>
+</body>
+
+</html>

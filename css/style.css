@@ -1,0 +1,101 @@
+* {
+    /* 全要素に適用 */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #000;
+    background-color: white;
+    padding: 30px 5% 0;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+header p {
+    font-size: 90%;
+    margin-bottom: 40px;
+    padding: 0 0 5px 0;
+    border-bottom: solid 5px #00aced;
+}
+
+#wrapper {
+    max-width: 1024px;
+    margin: 30px auto;
+    min-height: 300px;    
+}
+
+main h2 {
+    border-left: 5px solid #00aced;
+    padding-left: 5px;
+    font-size: 1em;
+    margin-right: 30px;
+}
+
+#input-form .input-text {
+    display: flex;
+    align-items: center;
+}
+
+#input-form .input-text,
+#input-form .submit {
+    margin-top: 1rem;   /* root em : html要素を基準*/
+} 
+
+.input-text input {
+    border: 1px solid #e6e6e6;
+    width: 4em;
+    line-height: 30px;
+    text-align: center;
+}
+
+.input-text label {
+    display: inline-block;
+    padding: 1em 1em;
+    width: 3em;
+}
+
+#input-form .output-text {
+    display: flex;
+    align-items: center;
+}
+
+.output-text label {
+    display: inline-block;
+    padding: 1em 1em;
+    width: 6em;
+}
+
+.output-text span {
+    display: inline-block;
+    white-space: nowrap;
+    /*
+    ソース中のホワイトスペースを無視
+    ソース中の改行を1つの半角スペースとして表示
+    ボックスサイズが指定されている場合にも自動改行しない
+    */
+}
+
+.submit button {
+    margin-right: 20px;
+    padding: 10px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: .5em;
+    line-height: 30px;
+    font-size: 16px;
+    transition: 0.1s all ease-in;
+}
+
+.submit button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.submit button#start-button {
+    background-color: #00aced;
+    color: #fff;
+}
